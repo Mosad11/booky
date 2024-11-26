@@ -1,4 +1,6 @@
+import 'package:booky/core/helpers/extenstions/extenstions.dart';
 import 'package:booky/core/helpers/theming/font_style/font_styles.dart';
+import 'package:booky/core/routing/routes.dart';
 import 'package:booky/features/home/ui/widgets/custom_book_item.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +12,9 @@ class BookListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        context.pushNamed(Routes.bookDetailsScreen);
+      },
       child: SizedBox(
         height: 125,
         child: Row(
