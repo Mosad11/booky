@@ -1,4 +1,5 @@
 import 'package:booky/core/routing/routes.dart';
+import 'package:booky/features/home/ui/screen/home_screen.dart';
 import 'package:booky/features/splash/ui/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,10 @@ class AppRouter {
       case Routes.splashScreen:
         return MaterialPageRoute(
           builder: (_) => const SplashScreen(),
+        );
+      case Routes.homeScreen:
+        return MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
         );
       default:
         return null;
