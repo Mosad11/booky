@@ -1,4 +1,5 @@
 import 'package:booky/core/helpers/theming/font_style/font_styles.dart';
+import 'package:booky/features/home/ui/widgets/best_seller_list_view.dart';
 import 'package:flutter/material.dart';
 import 'custom_app_bar.dart';
 import 'featured_list_view.dart';
@@ -27,7 +28,7 @@ class HomeViewBody extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
-                  'Newset Books',
+                  'Best Seller',
                   style: TextStyles.textStyle18,
                 ),
               ),
@@ -37,12 +38,12 @@ class HomeViewBody extends StatelessWidget {
             ],
           ),
         ),
-        // SliverFillRemaining(
-        //   child: Padding(
-        //     padding: EdgeInsets.symmetric(horizontal: 30),
-        //     child: BestSellerListView(),
-        //   ),
-        // ),
+        SliverFillRemaining(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 30),
+            child: BestSellerListView(),
+          ),
+        ),
       ],
     );
   }
