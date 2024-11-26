@@ -1,4 +1,6 @@
 import 'package:booky/core/helpers/constants/constants.dart';
+import 'package:booky/core/helpers/extenstions/extenstions.dart';
+import 'package:booky/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -17,7 +19,9 @@ class CustomAppBar extends StatelessWidget {
           ),
           const Spacer(),
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                context.pushNamed(Routes.searchScreen);
+              },
               icon: const Icon(
                 FontAwesomeIcons.magnifyingGlass,
                 size: 22,
