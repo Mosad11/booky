@@ -1,3 +1,4 @@
+import 'package:booky/features/home/ui/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text("Home"),
+        child: HomeViewBody(),
       ),
     );
   }
